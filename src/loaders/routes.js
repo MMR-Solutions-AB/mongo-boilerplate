@@ -6,11 +6,6 @@ const app = express();
  **/
 // Client Route Code
 const index = require('../routes/client/index');
-const confirmation = require('../routes/client/confirmation');
-
-// Server Route Code
-const orderLines = require('../routes/server/push');
-const push = require('../routes/server/push');
 
 // Server & Client (Error) Route Code
 const notFound = require('../routes/both/404.js');
@@ -23,11 +18,6 @@ const serviceUnavailable = require('../routes/both/500.js');
  **/
 // Set Client Route URLS
 app.use('/', index);
-app.use('/confirmation', confirmation);
-
-// Set Server Route URLS
-app.use('/push', push);
-app.use('/order-lines', orderLines);
 
 // Set Server & Client (Error) Route URLS
 app.use('/500', serviceUnavailable);

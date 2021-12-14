@@ -1,4 +1,6 @@
 
+const mongoose = require('mongoose');
+
 // Import .env file values into variable 'process.env'
 require('dotenv').config();
 
@@ -15,7 +17,6 @@ app.use('../public', express.static('public'));
 
 
 app.use(require('./routes'));
-
 
 /**
  * 	Start Express Server Application
