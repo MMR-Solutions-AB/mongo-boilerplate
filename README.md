@@ -1,9 +1,9 @@
-# klarna-checkout-boilerplate
+# mongo-boilerplate
 
 ## How to install
 
 1. Fork this git repo and then clone your repo with `git clone`.
-2. Run `cd klarna-checkout-boilerplate` in the terminal.
+2. Run `cd mongo-boilerplate` in the terminal.
 3. Run `npm i` in the terminal.
 4. Create a Klarna Playground Account + Klarna Playground API Key that you will use below:
 5. Create an .env file that looks like this: 
