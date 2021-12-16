@@ -1,4 +1,3 @@
-
 const mongoose = require('mongoose');
 
 // Import .env file values into variable 'process.env'
@@ -17,6 +16,14 @@ app.use('../public', express.static('public'));
 
 
 app.use(require('./routes'));
+
+
+mongoose.connect('mongodb+srv://admin:admin@cluster0.sk0f3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority').then((connection)=>{
+	console.log('Database connection successful!')
+}).catch((err)=>{
+	console.error('Database connection failed: ', err)
+});
+
 
 /**
  * 	Start Express Server Application
